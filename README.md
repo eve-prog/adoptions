@@ -1,5 +1,7 @@
 # adoptions
 
-Pentastagiu Java 2021 - Session 2
+Animal Adoptions Spring Application
 
-22 Apr 2021
+Java - Session 3
+
+29 Apr 2021
