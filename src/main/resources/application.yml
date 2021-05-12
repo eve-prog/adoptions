@@ -1,0 +1,14 @@
+#configurare setari
+spring:
+  datasource:
+    username: penta
+    password: stagiu
+    url: "jdbc:postgresql://localhost:5432/pentastagiu2021java"
+  jpa:
+    #jpa este un api care specifica un anumit standard, iar hibernate este cel care implementeaza jpad
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update #updateaza tabelele din db
+
+
+
