@@ -13,6 +13,7 @@ public class CatService {
     public CatService(CatRepository catRepository) {
         this.catRepository = catRepository;
     }
+
     public void addCat(Cat cat) {
         if (cat.getName() != null && cat.getUrl() == null) {
             throw new RuntimeException("Cat must have a name and a photo");
@@ -22,13 +23,14 @@ public class CatService {
                 .setUrl(cat.getUrl());
         catRepository.save(catToSave);
     }
+
     public List<Cat> findAll() {
         return catRepository.findAll();
     }
 
     public Cat findCat(String name) {
         if (name == null || name == "") {
-            throw  new RuntimeException("Must specify name");
+            throw new RuntimeException("Must specify name");
         }
         return catRepository.findCatByName(name);
     }

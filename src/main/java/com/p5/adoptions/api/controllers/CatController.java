@@ -10,19 +10,24 @@ import java.util.List;
 @RestController
 @RequestMapping("/v1/cats")
 public class CatController {
+
     private final CatService catService;
+
     public CatController(CatService catService) {
         this.catService = catService;
     }
+
     @GetMapping
-    public ResponseEntity <List<Cat>> getAllCats() {
-        List<Cat> catList =  catService.findAll();
+    public ResponseEntity<List<Cat>> getAllCats() {
+        List<Cat> catList = catService.findAll();
         return ResponseEntity.ok(catList);
     }
+
     @PostMapping
     public void addCat(@RequestBody Cat cat) {
         catService.addCat(cat);
     }
+
     @GetMapping("/{name}")
     public ResponseEntity<Cat> getCatByName(@PathVariable("name") String name) {
         return ResponseEntity.ok(catService.findCat(name));
