@@ -1,9 +1,9 @@
 package com.p5.adoptions.model;
+//dto = data transfer object -> transfera date dintr-o parte in cealalta
+public class CatDTO extends Animal {
 
-public class Cat extends Animal {
-
-    public Cat(String name, String photoUrl) {
-        super(name, photoUrl);
+    public CatDTO(String name, String photoUrl, Integer id) {
+        super(name, photoUrl, id);
     }
 
     public void iAmCat() {
