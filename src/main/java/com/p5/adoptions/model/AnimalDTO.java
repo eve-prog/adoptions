@@ -1,50 +1,58 @@
 package com.p5.adoptions.model;
 
-public class Animal {
-
+public class AnimalDTO
+{
     protected Integer id;
     protected String name;
     protected String photoUrl;
 
-    public Animal() { }
+    public AnimalDTO()
+    {
+    }
 
-    public Animal(String name, String photoUrl, Integer id) {
+    public AnimalDTO(String name, String photoUrl, Integer id)
+    {
         this.name = name;
         this.photoUrl = photoUrl;
         this.id = id;
     }
 
-    public void speak() {
+    public void speak()
+    {
         System.out.println("Animal speaks!");
     }
 
-    protected void walk() {
+    protected void walk()
+    {
         System.out.println("Animal walks!");
     }
 
-    public String getName() {
+    public String getName()
+    {
         return this.name;
     }
 
-    public Animal setName(String newName) {
+    public AnimalDTO setName(String newName)
+    {
         this.name = newName;
         return this;
     }
 
-    public String getPhotoUrl() {
+    public String getPhotoUrl()
+    {
         return photoUrl;
     }
 
-    public Animal setPhotoUrl(String photoUrl) {
+    public AnimalDTO setPhotoUrl(String photoUrl)
+    {
         this.photoUrl = photoUrl;
         return this;
     }
-
     public Integer getId() {
         return id;
     }
 
-    public Animal setId(Integer id) {
+    public AnimalDTO setId(Integer id) {
         this.id = id;
         return this;
     }
