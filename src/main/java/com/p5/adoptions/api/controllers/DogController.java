@@ -6,8 +6,6 @@ import com.p5.adoptions.service.DogService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/v1/dogs")
 public class DogController {
