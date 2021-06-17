@@ -8,7 +8,6 @@ public class Cat extends Animal
 {
     private String purrLevel;
 
-
     public Cat()
     {
     }
